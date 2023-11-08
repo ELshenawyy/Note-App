@@ -30,7 +30,7 @@ class NoteItem extends StatelessWidget {
                   "Build your carrier with Ahmed Elshenawy",
                   style: TextStyle(
                     color: Colors.black.withOpacity(0.5),
-                    fontSize: 18,
+                    fontSize: 17,
                   ),
                 ),
               ),
