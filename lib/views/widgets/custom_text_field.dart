@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
+import '../../constants.dart';
 
 class AddTextField extends StatelessWidget {
   const AddTextField({super.key, required this.hint,this.maxLines = 1});
