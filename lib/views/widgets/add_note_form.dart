@@ -4,6 +4,7 @@ import 'package:note_app/cubit/add_note_cubit.dart';
 import 'package:note_app/model/note_model.dart';
 
 import 'button_sheet.dart';
+import 'colors_list_view.dart';
 import 'custom_text_field.dart';
 import 'package:intl/intl.dart';
 
@@ -50,6 +51,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
           const SizedBox(
             height: 32,
           ),
+          const ListColorItems(),
           BlocBuilder<AddNoteCubit, AddNoteState>(
             builder: (context, state) {
               return CustomButton(
@@ -60,7 +62,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
 
                     DateTime currentDate = DateTime.now();
                     String formattedCurrentDate =
-                        DateFormat().add_yMd().format(currentDate);
+                        DateFormat("dd/MM/yyyy – kk:mm").format(currentDate);
 
                     var model = NoteModel(
                         title: title!,
